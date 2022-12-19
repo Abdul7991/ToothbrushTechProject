@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>Order Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=sawp" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+
+        </header>
+        <!-- End Header-->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">list_alt</span> ORDER.TRACKER
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">dashboard</span> Dashboard
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">inventory</span> Products
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">groups</span> Customers
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">poll</span> Reports
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+            <div class="main-title">
+                <h2>ORDER DASHBOARD</h2>
+            </div>
+
+            <div class="main-card-wrapper">
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>PRODUCTS</h3>
+                        <span class="material-icons-outlined">inventory</span>
+                    </div>
+                    <h1>2</h1>
+                </div>
+
+                <div class="card">
+                     <div class="card-inner">
+                        <h3>CUSTOMERS</h3>
+                        <span class="material-icons-outlined">groups</span>
+                        </div>
+                    <h1>5698</h1>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>REPORTS</h3>
+                        <span class="material-icons-outlined">poll</span>
+                    </div>
+                    <h1>3</h1>
+                </div>
+            </div>
+        </main>
+        <!-- End Main-->
+    </div>
+
+    <!-- Custom Js-->
+    <script src="js/script.js"></script>
+</body>
+</html>
