@@ -33,7 +33,7 @@
         <aside id="sidebar">
             <div class="sidebar-title">
                 <div class="sidebar-brand">
-                    <span class="material-icons-outlined">list_alt</span> ORDER.TRACKER
+                    <span class="material-icons-outlined">list_alt</span> TRACKER.IO
                 </div>
                 <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
             </div>
@@ -58,7 +58,7 @@
         <!-- Main -->
         <main class="main-container">
             <div class="main-title">
-                <h2>ORDER DASHBOARD</h2>
+                <h2>DASHBOARD ANALYTICS</h2>
             </div>
 
             <div class="main-card-wrapper">
@@ -74,10 +74,10 @@
 
                 <div class="card">
                      <div class="card-inner">
-                        <h3>CUSTOMERS</h3>
-                        <span class="material-icons-outlined">groups</span>
+                        <h3>TOTAL ORDERS</h3>
+                        <span class="material-icons-outlined">inventory_2</span>
                         </div>
-                    <h1>5698</h1>
+                    <h1><span id="name"></span></h1>
                 </div>
 
                 <div class="card">
@@ -87,11 +87,70 @@
                     </div>
                     <h1>3</h1>
                 </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>UPDATES</h3>
+                        <span class="material-icons-outlined">tips_and_updates</span>
+                    </div>
+                    <h1>DAILY</h1>
+                </div>
+
             </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <h2 class="chart-title"> Product Type inventory</h2>
+                    <div id="pie-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <h2 class="chart-title"> Sales By Age</h2>
+                    <div id="barchart-age"></div>
+                </div>
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <h2 class="chart-title"> Orders By Month</h2>
+                    <div id="monthlybar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <h2 class="chart-title"> Orders By Day</h2>
+                    <div id="dailybar-chart"></div>
+                </div>
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <h2 class="chart-title"> Delivery Status</h2>
+                    <h3>Delivered: <span id="delivered"></span></h3>
+                    <h3>Unsuccessful: <span id="unsuccessful"></span></h3>
+                    <h3>In Transit: <span id="inTransit"></span></h3>
+                </div>
+
+                <div class="charts-card">
+                    <h2 class="chart-title"> Dispatch Status</h2>
+                    <h3>Dispatched: <span id="dispatch"></span></h3>
+                    <h3>Order Recieved: <span id="received"></span></h3>
+                    <h3>Order Confirmed: <span id="confirmed"></span></h3>
+                </div>
+            </div>
+
         </main>
         <!-- End Main-->
+
+
     </div>
 
+
+    <!-- Scripts-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.36.3/apexcharts.min.js"></script>
     <!-- Custom Js-->
     <script src="js/script.js"></script>
 </body>
