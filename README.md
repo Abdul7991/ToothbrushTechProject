@@ -3,7 +3,7 @@
 Check out the website below:
 https://xander-frontend-project.netlify.app/
 
-A front-end manufactured to display a mockup of analyitics pretaining to toothbrush data. This was made using raw JavaScript, HTML and CSS.
+A front-end manufactured to display a mockup of analyitics pretaining to toothbrush data. 
 
 # Functionalities
 
